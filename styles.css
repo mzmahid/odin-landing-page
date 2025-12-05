@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 .content {
     width: 70%;
     height: 100%;
-    border: 1px solid pink;
 }
 
 .signin {
@@ -41,12 +41,13 @@ body {
 .header ul {
     list-style: none;
     display: flex;
-    gap: 48px;
+    gap: 32px;
     align-items: center;
+    padding-top: 12px;
 }
 
 .header ul li {
-    color: white;
+    color: #e5e7eb;
     font-size: 18px;
 }
 
@@ -54,6 +55,7 @@ body {
     margin-right: auto;
     font-size: 24px;
     color: #f9faf8;
+    font-weight: bold;
 }
 
 .hero {
@@ -66,12 +68,17 @@ body {
 
 .hero_content {
     width: 100%;
-    flex: 0 1 300px;
+    flex: 0 1 250px;
     display: flex;
+    gap: 12px;
 }
 
 .hero_text {
     flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .hero_text  h1 {
@@ -82,29 +89,43 @@ body {
 
 .hero_text p {
     font-size: 18px;
-    color: #f9faf8;
+    color: #e5e7eb;
+    font-weight: 300;
 }
 
 .hero_text button {
     font-size: 18px;
-    padding: 4px 32px;
+    padding: 8px 32px;
+    margin-top: 8px;
     background-color: #3882f6;
     border: none;
-    border-radius: 8px;
-    
-    
+    border-radius: 8px;   
 }
 
 .hero_img {
     flex: 1;
-    background-color: cyan;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_img p {
+    color: #f9faf8;
 }
 
 .info{
-    flex: 1 1 500px;
+    flex: 1 1 420px;
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.info p {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin-top: 30px;
 }
 
 .info .content {
@@ -114,18 +135,32 @@ body {
 }
 
 .card_wrapper {
-    height: 100%;
+    width: 75%;
+    height: auto;
     display: flex;
-    gap: 10px;
-    align-items: center;
+    gap: 20px 48px;
+    align-content: flex-start;
     justify-content: center;
-    width: 70%;
+    flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 .card {
-    background-color: tan;
-    flex: 1 1 100px;
-    height: 100px;
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.card_image {
+    border: 4px solid #70a2f4;
+    height: 150px;
+    border-radius: 24px;
+}
+
+.card_text {
+    text-align: center;
+    padding-top: 4px;
 }
 
 .quote {
@@ -142,10 +177,24 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 70%;
 }
 
-.quote_writer {
+.quote .content div {
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+}
+
+.quote .content div i {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote .content div p {
     margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .signin {
@@ -162,19 +211,54 @@ body {
 
 .action_box {
     width: 100%;
-    height: 40%;
-    background-color: aqua;
+    height: 50%;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.action_box > div {
+    width: 75%;
+    height: 100%;
     display: flex;
 }
 
 .action_text {
     flex: 1 1 75%;
-    background-color: orange;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.action_text .action_header {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.action_text p {
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 .action_button {
     flex: 1 1 25%;
-    background-color: coral;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_button button {
+    font-size: 18px;
+    padding: 4px 24px;
+    border: 2px solid #f9faf8;
+    color: #f9faf8;
+    font-weight: bold;
+    background-color: #3882f6;
+    border-radius: 8px;
 }
 
 .footer {
@@ -187,5 +271,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: lime;
+    color: #e5e7eb;
 }
