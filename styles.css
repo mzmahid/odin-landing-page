@@ -44,6 +44,7 @@ body {
     gap: 32px;
     align-items: center;
     padding-top: 12px;
+    margin-bottom: 32px;
 }
 
 .header ul li a {
@@ -73,6 +74,7 @@ body {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero_text {
